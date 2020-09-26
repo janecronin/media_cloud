@@ -36,6 +36,8 @@ us_stories <- us_stories %>%
   mutate(day = day(publish_date)) %>%
   filter(year != 'NA')
 
+us_stories %>% group_by(month) %>% summarise(n = n())
+
 # Filter by media_type
 
 us_stories %>% filter(media_type == "digital_native")
