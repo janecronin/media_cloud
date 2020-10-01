@@ -1,5 +1,18 @@
 # Sample code for loading, cleaning and joining Media Cloud datasets
 
+# Media Cloud Workshop Oct 5 2020
+# Sample code for loading, cleaning and joining Media Cloud datasets
+
+# Install packages
+
+# If you don't have the tidyverse and lubridate packages then please install by uncommenting code below
+# install.packages("tidyverse")
+# install.packages("lubridate")
+
+# Set working directory
+
+setwd("mediacloud")
+
 library(tidyverse)
 library(lubridate)
 
@@ -11,6 +24,7 @@ c_right_stories <- read_csv("tigerking.csv", col_names = TRUE)
 
 head(sources)
 head(us_stories)
+head(c_right_stories)
 # Note that there is some duplication across datasets
 
 ## Join stories and source datasets 
